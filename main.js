@@ -4,7 +4,7 @@ function render(){
     mainDiv.innerHTML=""
 
     const title = document.createElement('div')
-    title.classList.add('title')
+    title.classList.add('title','noselect')
 
 
     const neve = document.createElement('span')
