@@ -1,26 +1,98 @@
 body{
-    margin: 1rem;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
+    background-color: #ffffff;
 }
 
-#logo{
-    height: 3vw;
-    position: relative;
+.logo{
+    display: flex;
+    height: 50%;
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    z-index: -1;
+    margin: 0.5em;
 }
 
-#main-div{
+.logoBlack{
+    display: flex;
+    height: 50%;
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    z-index: -1;
+    margin: 0.5em;
+    opacity: 0%;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.logoBlack:hover{
+    opacity: 100%;
+}
+
+.title{
+    pointer-events: none;
     display: flex;
     flex-direction: column;
+    /* height: 100%;
+    width: 100%; */
+    overflow: hidden;
+    height: 60%;
+    font-size: 12em;
+    font-weight:lighter;
+    line-height: .8em;
+    letter-spacing: -.03em;
+    padding-bottom: 0.18em;
+}
+
+
+
+#main-div{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.about{
+    margin-top: 0;
+    color: black;
+    margin-left: 6px;
+    font-size: 4em;
+    max-width: 75%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about p{
     margin: 0;
-    align-items: flex-start;
-    justify-items: flex-start;
-    height: 100vh;
-    width: 100vw;
-    overflow-y: hidden;
+}
+
+.about a{
+    color: black;
+    text-decoration: none;
+}
+
+.about a:hover{
+
+    text-decoration:underline
+}
+
+.closeBtn{
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    cursor: pointer;
 }
 
 
+/* 
 #main-div span{
-    font-size: 30vh;
-}
+    /* font-size: 18rem;
+    margin: 0%;
+    padding: -1em; */
+/* /^ */
+
