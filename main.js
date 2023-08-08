@@ -66,7 +66,7 @@ function render2() {
     console.log('aiuto');
     const mainDiv = document.getElementById('main-div')
     mainDiv.innerHTML=""
-    mainDiv.classList.add('about')
+    mainDiv.classList.add('about','noselelct')
 
     const logo = document.createElement('img')
     logo.src = "./assets/yellow.svg"
